@@ -44,7 +44,7 @@ bool expandIncludes(const std::string& src, const std::string& fromFile, std::st
                 std::cerr << "[shader] cannot open included file '" << inc << "' (from " << fromFile << ")\n";
                 return false;
             }
-            res << "// ---- begin " << inc << "\n" << incSrc << "\n// ---- end " << inc << "\n";
+            res << incSrc << "\n";
         } else {
             res << line << "\n";
         }

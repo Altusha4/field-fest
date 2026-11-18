@@ -1,20 +1,16 @@
-# build output
 build/
 cmake-build-*/
 .vs/
 *.user
 
-# IDE / OS
 .idea/
 .vscode/
 .DS_Store
 
-# created by the program at run time
 /screenshots/
 best_score*.txt
 /benchmark.csv
 
-# your own music files: do NOT submit them (copyright, size)
 songs/*.mp3
 songs/*.wav
 songs/*.flac

@@ -7,7 +7,6 @@ if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   set(CMAKE_BUILD_TYPE Release)
 endif()
 
-# ---------------- third-party (vendored, no internet needed) ----------------
 set(GLFW_BUILD_DOCS     OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_TESTS    OFF CACHE BOOL "" FORCE)
 set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
@@ -27,7 +26,6 @@ add_library(imgui STATIC
 target_include_directories(imgui PUBLIC third_party/imgui third_party/imgui/backends)
 target_link_libraries(imgui PUBLIC glfw)
 
-# miniaudio: single-file audio library, only playback is compiled in
 add_library(miniaudio STATIC third_party/miniaudio/miniaudio.c)
 target_include_directories(miniaudio PUBLIC third_party/miniaudio)
 if(APPLE)
@@ -39,7 +37,6 @@ endif()
 
 find_package(OpenGL REQUIRED)
 
-# ---------------- application ----------------
 add_executable(FieldFest
   src/main.cpp
   src/App.cpp
@@ -68,7 +65,6 @@ add_executable(FieldFest
 
 target_include_directories(FieldFest PRIVATE src third_party/glm)
 target_link_libraries(FieldFest PRIVATE glfw glad imgui miniaudio OpenGL::GL)
-# Absolute path to the shader sources: lets F5 hot-reload edited shaders live.
 target_compile_definitions(FieldFest PRIVATE SHADER_DIR="${CMAKE_SOURCE_DIR}/shaders" SONGS_DIR="${CMAKE_SOURCE_DIR}/songs")
 if(APPLE)
   target_compile_definitions(FieldFest PRIVATE GL_SILENCE_DEPRECATION)
@@ -81,6 +77,5 @@ else()
   target_compile_options(FieldFest PRIVATE -Wall -Wextra)
 endif()
 
-# Copy shaders next to the executable so the program also runs from a moved build folder.
 add_custom_command(TARGET FieldFest POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_SOURCE_DIR}/shaders" "$<TARGET_FILE_DIR:FieldFest>/shaders")
