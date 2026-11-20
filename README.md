@@ -2,7 +2,7 @@
 
 Computer Graphics Fundamentals, Final Project (Astana IT University, 2026–2027)
 
-> **Team:** Altynay Yertay, Nuray Nuraly, Zaure Tolegen · **Group:** XX-0000 · **Topic #:** N
+> **Team:** Altynay Yertay, Nuray Nuraly, Zaure Tolegen · **Group:** SE-2416 · **Topic #:** N
 > *(Edit these here and in `src/Config.h` so they match the topic sheet.)*
 
 A real-time OpenGL 3.3 core rhythm game set at an open-air night concert in one of three
