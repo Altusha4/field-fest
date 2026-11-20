@@ -123,12 +123,17 @@ crowd instancing OFF. `--bench` runs the performance measurement (section 6).
 
 | Module | Files | Owner |
 |---|---|---|
-| Renderer core: window, frame loop, render passes, GPU timer | `src/App.*`, `src/FrameUniforms.*`, `src/GpuTimer.*`, `src/Screenshot.*`, `src/Shader.*`, `src/MathUtil.h` | *name* |
-| **Headline technique: instanced crowd (+ naive path, benchmark)** | `src/Crowd.*`, `shaders/crowd.*`, `src/App.cpp` (`benchTick`) | *name* |
-| Stage, artists, trees, light beams | `src/Stage.*`, `src/Performers.*`, `src/Props.*`, `src/Beams.*`, `src/Geometry.h`, `shaders/props.*`, `shaders/mesh.*`, `shaders/beam.*` | *name* |
-| Environment: locations, terrain, sea, sky, stars, aurora | `src/Location.*`, `src/GridMesh.*`, `src/Terrain.*`, `src/Water.h`, `src/Sky.*`, `src/Grass.*`, `shaders/common.glsl`, `shaders/ground.*`, `shaders/grass.*`, `shaders/water.*`, `shaders/sky.*` | *name* |
-| Music, rhythm game, light show, HUD | `src/Music.*`, `src/Track.*`, `src/Audio.*`, `src/Game.*`, `src/Show.*`, `src/GlowSprites.*`, `src/Hud.*`, `src/Camera.*`, `shaders/glow.*` | *name* |
-| Report, video, presentation | `report/` | *name* |
+| Renderer core: window, frame loop, render passes, GPU timer | `src/App.*`, `src/FrameUniforms.*`, `src/GpuTimer.*`, `src/Screenshot.*`, `src/Shader.*`, `src/MathUtil.h` | Altynay Yertay |
+| **Headline technique: instanced crowd (+ naive path, benchmark)** | `src/Crowd.*`, `shaders/crowd.*`, `src/App.cpp` (`benchTick`) | Altynay Yertay |
+| Light show: spotlights, pyro, fireworks, particles | `src/Show.*`, `src/GlowSprites.*`, `shaders/glow.*` | Altynay Yertay |
+| Environment: locations, terrain, sea, sky, stars, aurora | `src/Location.*`, `src/GridMesh.*`, `src/Terrain.*`, `src/Water.h`, `src/Sky.*`, `src/Grass.*`, `shaders/common.glsl`, `shaders/ground.*`, `shaders/grass.*`, `shaders/water.*`, `shaders/sky.*` | Nuray Nuraly |
+| Stage, artists, trees, light beams | `src/Stage.*`, `src/Performers.*`, `src/Props.*`, `src/Beams.*`, `src/Geometry.h`, `shaders/props.*`, `shaders/mesh.*`, `shaders/beam.*` | Nuray Nuraly |
+| Camera: orbit, free-fly, preset views | `src/Camera.*` | Nuray Nuraly |
+| Music synthesis, own-song analysis (FFT, tempo, note chart), audio output | `src/Music.*`, `src/Track.*`, `src/Audio.*` | Zaure Tolegen |
+| Rhythm game and HUD: notes, score, combo, hype, menu | `src/Game.*`, `src/Hud.*` | Zaure Tolegen |
+| Demo video | YouTube / Google Drive link | Altynay Yertay |
+| Presentation | slides | Nuray Nuraly |
+| Written report | report PDF / DOCX | Zaure Tolegen |
 
 ## 5. How it works (short)
 
