@@ -2,8 +2,7 @@
 
 Computer Graphics Fundamentals, Final Project (Astana IT University, 2026–2027)
 
-> **Team:** Altynay Yertay, Nuray Nuraly, Zaure Tolegen · **Group:** SE-2416 · **Topic #:** N
-> *(Edit these here and in `src/Config.h` so they match the topic sheet.)*
+> **Team:** Altynay Yertay, Nuray Nuraly, Zaure Tolegen · **Group:** SE-2416
 
 A real-time OpenGL 3.3 core rhythm game set at an open-air night concert in one of three
 locations (meadow, beach with the sea, winter with northern lights). The sun sets, a crowd of
@@ -105,7 +104,7 @@ Each song has its own sound, light colours and best score (`best_score*.txt`).
 as "your track". The game decodes the file (miniaudio), finds the tempo and the beats by itself
 and builds the notes and the light show from the sound (see section 5). A DJ is on stage for
 every song; for your own songs two rappers or a singer join (chosen from the file name in
-`App::selectSong`). Do not put copyrighted songs into the submitted ZIP or the YouTube video.
+`App::selectSong`). Audio files in `songs/` are ignored by git and are not part of the repository.
 
 **Best-looking shots:** the drop (from 0:30) and the final drop (from 1:15) at night, camera
 "behind the crowd" or "front row". Press **O** for autopilot to record without playing.
@@ -131,9 +130,9 @@ crowd instancing OFF. `--bench` runs the performance measurement (section 6).
 | Camera: orbit, free-fly, preset views | `src/Camera.*` | Nuray Nuraly |
 | Music synthesis, own-song analysis (FFT, tempo, note chart), audio output | `src/Music.*`, `src/Track.*`, `src/Audio.*` | Zaure Tolegen |
 | Rhythm game and HUD: notes, score, combo, hype, menu | `src/Game.*`, `src/Hud.*` | Zaure Tolegen |
-| Demo video | YouTube / Google Drive link | Altynay Yertay |
-| Presentation | slides | Nuray Nuraly |
-| Written report | report PDF / DOCX | Zaure Tolegen |
+| Demo video | — | Altynay Yertay |
+| Presentation | — | Nuray Nuraly |
+| Written report | — | Zaure Tolegen |
 
 ## 5. How it works (short)
 
