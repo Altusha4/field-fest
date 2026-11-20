@@ -3,6 +3,8 @@
 Computer Graphics Fundamentals, Final Project (Astana IT University, 2026–2027)
 
 > **Team:** Altynay Yertay, Nuray Nuraly, Zaure Tolegen · **Group:** SE-2416
+>
+> **Demo video:** https://www.youtube.com/watch?v=oqBdaXMB9iM
 
 A real-time OpenGL 3.3 core rhythm game set at an open-air night concert in one of three
 locations (meadow, beach with the sea, winter with northern lights). The sun sets, a crowd of
@@ -130,7 +132,7 @@ crowd instancing OFF. `--bench` runs the performance measurement (section 6).
 | Camera: orbit, free-fly, preset views | `src/Camera.*` | Nuray Nuraly |
 | Music synthesis, own-song analysis (FFT, tempo, note chart), audio output | `src/Music.*`, `src/Track.*`, `src/Audio.*` | Zaure Tolegen |
 | Rhythm game and HUD: notes, score, combo, hype, menu | `src/Game.*`, `src/Hud.*` | Zaure Tolegen |
-| Demo video | — | Altynay Yertay |
+| Demo video | [YouTube](https://www.youtube.com/watch?v=oqBdaXMB9iM) | Altynay Yertay |
 | Presentation | — | Nuray Nuraly |
 | Written report | — | Zaure Tolegen |
 
